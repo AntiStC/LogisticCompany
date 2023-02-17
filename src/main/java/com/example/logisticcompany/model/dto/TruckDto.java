@@ -8,7 +8,7 @@ public class TruckDto extends AbstractDto {
     private Integer driverChange;
     private Integer capacity;
     private Boolean condition;
-    private Long longId;
+    private Long cityId;
 
     public TruckDto() {
     }
@@ -46,11 +46,11 @@ public class TruckDto extends AbstractDto {
     }
 
     public Long getCityId() {
-        return longId;
+        return cityId;
     }
 
     public void setCityId(Long longId) {
-        this.longId = longId;
+        this.cityId = longId;
     }
 
     @Override

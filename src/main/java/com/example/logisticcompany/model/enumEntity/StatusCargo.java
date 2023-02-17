@@ -5,7 +5,7 @@ public enum StatusCargo {
     SHIPPED("shipped"),
     DELIVERED("delivered");
 
-    private String status;
+    private final String status;
 
     StatusCargo(String status) {
         this.status = status;

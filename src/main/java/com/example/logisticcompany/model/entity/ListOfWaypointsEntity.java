@@ -62,8 +62,8 @@ public class ListOfWaypointsEntity extends AbstractEntity {
     public String toString() {
         return """
                 ListOfWaypointsEntity{
-                    cityEntity=$cityEntity, 
-                    cargoEntity=$cargoEntity, 
+                    cityEntity=$cityEntity,\s
+                    cargoEntity=$cargoEntity,\s
                     type=$type
                 }""";
     }

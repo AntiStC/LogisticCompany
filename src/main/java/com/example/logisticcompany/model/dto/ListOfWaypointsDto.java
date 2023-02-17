@@ -54,8 +54,8 @@ public class ListOfWaypointsDto extends AbstractDto {
     public String toString() {
         return """
                 ListOfWaypointsDto{
-                    city=$city, 
-                    cargo=$cargo, 
+                    city=$city,\s
+                    cargo=$cargo,\s
                     type=$type
                 }""";
     }

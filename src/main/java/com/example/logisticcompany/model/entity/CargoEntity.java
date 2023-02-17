@@ -47,7 +47,7 @@ CargoEntity extends AbstractEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof CargoEntity that)) return false;
-        return getWeight() == that.getWeight()
+        return getWeight().equals(that.getWeight())
                 && getNameCargo().equals(that.getNameCargo())
                 && getStatusCargo() == that.getStatusCargo();
     }
@@ -63,8 +63,8 @@ CargoEntity extends AbstractEntity {
     public String toString() {
         return """
                 CargoEntity{
-                nameCargo='$nameCargo', 
-                weight=$weight, 
+                nameCargo='$nameCargo',\s
+                weight=$weight,\s
                 statusCargo=$statusCargo
                 }""";
     }

@@ -76,9 +76,9 @@ public class OrderEntity extends AbstractEntity {
     public String toString() {
         return """
                 OrderEntity{
-                    statusOrder=$statusOrder, 
-                    listOfWaypointEntities=$listOfWaypointEntities, 
-                    truckEntity=$truckEntity, 
+                    statusOrder=$statusOrder,\s
+                    listOfWaypointEntities=$listOfWaypointEntities,\s
+                    truckEntity=$truckEntity,\s
                     driverEntities=$driverEntities
                 }""";
     }

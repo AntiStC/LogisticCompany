@@ -62,8 +62,8 @@ public class TruckEntity extends AbstractEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof TruckEntity that)) return false;
-        return getDriverChange() == that.getDriverChange()
-                && getCapacity() == that.getCapacity()
+        return getDriverChange().equals(that.getDriverChange())
+                && getCapacity().equals(that.getCapacity())
                 && getCondition() == that.getCondition()
                 && getRegistrationPlate().equals(that.getRegistrationPlate())
                 && cityEntity.equals(that.cityEntity);
@@ -82,10 +82,10 @@ public class TruckEntity extends AbstractEntity {
     public String toString() {
         return """
                 TruckEntity{
-                    registrationPlate='$registrationPlate', 
-                    driverChange=$driverChange, 
-                    capacity=$capacity, 
-                    condition=$condition, 
+                    registrationPlate='$registrationPlate',\s
+                    driverChange=$driverChange,\s
+                    capacity=$capacity,\s
+                    condition=$condition,\s
                     cityEntity=$cityEntity
                 }""";
     }

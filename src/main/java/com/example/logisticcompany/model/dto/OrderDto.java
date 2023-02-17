@@ -6,9 +6,9 @@ import java.util.Objects;
 public class OrderDto extends AbstractDto {
 
     private Boolean statusOrder;
-    private List<Long> listOfWayPointsModelsId;
+    private List<ListOfWaypointsDto> listOfWaypointsDtoList;
     private Long trackId;
-    private List<Long> driversId;
+    private List<DriverDto> driverList;
 
     public OrderDto() {
     }
@@ -21,12 +21,12 @@ public class OrderDto extends AbstractDto {
         this.statusOrder = statusOrder;
     }
 
-    public List<Long> getListOfWayPointsModels() {
-        return listOfWayPointsModelsId;
+    public List<ListOfWaypointsDto> getListOfWayPointsModels() {
+        return listOfWaypointsDtoList;
     }
 
-    public void setListOfWayPointsModels(List<Long> listOfWayPointsModels) {
-        this.listOfWayPointsModelsId = listOfWayPointsModels;
+    public void setListOfWayPointsModels(List<ListOfWaypointsDto> listOfWayPointsModels) {
+        this.listOfWaypointsDtoList = listOfWayPointsModels;
     }
 
     public Long getTrack() {
@@ -37,12 +37,12 @@ public class OrderDto extends AbstractDto {
         this.trackId = track;
     }
 
-    public List<Long> getDrivers() {
-        return driversId;
+    public List<DriverDto> getDrivers() {
+        return driverList;
     }
 
-    public void setDrivers(List<Long> drivers) {
-        this.driversId = drivers;
+    public void setDrivers(List<DriverDto> drivers) {
+        this.driverList = drivers;
     }
 
     @Override

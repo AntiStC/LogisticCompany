@@ -40,7 +40,7 @@ public class CargoDto extends AbstractDto {
         if (this == o) return true;
         if (!(o instanceof CargoDto cargoDto)) return false;
         if (!super.equals(o)) return false;
-        return getWeight() == cargoDto.getWeight() && getNameCargo().equals(cargoDto.getNameCargo()) && getStatusCargo().equals(cargoDto.getStatusCargo());
+        return getWeight().equals(cargoDto.getWeight()) && getNameCargo().equals(cargoDto.getNameCargo()) && getStatusCargo().equals(cargoDto.getStatusCargo());
     }
 
     @Override
@@ -52,8 +52,8 @@ public class CargoDto extends AbstractDto {
     public String toString() {
         return """
                 CargoDto{
-                    nameCargo='$nameCargo', 
-                    weight=$weight, 
+                    nameCargo='$nameCargo',\s
+                    weight=$weight,\s
                     statusCargo='$statusCargo'
                 }""";
     }

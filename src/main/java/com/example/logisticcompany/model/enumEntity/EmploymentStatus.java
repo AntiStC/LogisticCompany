@@ -5,7 +5,7 @@ public enum EmploymentStatus {
     SHIFT("shift"),
     WORK("work");
 
-    private String employmentStatus;
+    private final String employmentStatus;
 
     EmploymentStatus(String employmentStatus) {
         this.employmentStatus = employmentStatus;

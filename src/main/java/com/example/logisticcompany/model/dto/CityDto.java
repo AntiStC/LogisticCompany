@@ -1,15 +1,13 @@
-package com.example.logisticcompany.model.entity;
-
-import jakarta.persistence.Entity;
+package com.example.logisticcompany.model.dto;
 
 import java.util.Objects;
 
-@Entity
-public class CityEntity extends AbstractEntity {
+public class CityDto extends AbstractDto {
+
     private String city;
     private Long distance;
 
-    public CityEntity() {
+    public CityDto() {
     }
 
     public String getCity() {
@@ -31,21 +29,20 @@ public class CityEntity extends AbstractEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CityEntity that)) return false;
-        return getDistance().equals(that.getDistance())
-                && getCity().equals(that.getCity());
+        if (!(o instanceof CityDto cityDto)) return false;
+        if (!super.equals(o)) return false;
+        return getCity().equals(cityDto.getCity()) && getDistance().equals(cityDto.getDistance());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCity(),
-                getDistance());
+        return Objects.hash(super.hashCode(), getCity(), getDistance());
     }
 
     @Override
     public String toString() {
         return """
-                CityEntity{
+                CityDto{
                     city='$city',\s
                     distance=$distance
                 }""";

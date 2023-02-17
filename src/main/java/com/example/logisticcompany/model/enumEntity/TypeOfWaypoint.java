@@ -5,7 +5,7 @@ public enum TypeOfWaypoint {
     LOADING("loading"),
     UNLOADING("unloading");
 
-    private String type;
+    private final String type;
 
     TypeOfWaypoint(String type) {
         this.type = type;

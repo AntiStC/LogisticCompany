@@ -85,8 +85,9 @@ public class DriverEntity extends AbstractEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof DriverEntity that)) return false;
-        return getPersonalNumber() == that.getPersonalNumber()
-                && getNumberOfHoursWorked() == that.getNumberOfHoursWorked()
+        return getPersonalNumber().equals(that.getPersonalNumber())
+                && getNumberOfHoursWorked().
+                equals(that.getNumberOfHoursWorked())
                 && getFirstName().equals(that.getFirstName())
                 && getLastName().equals(that.getLastName())
                 && getEmploymentStatus() == that.getEmploymentStatus()
@@ -109,12 +110,12 @@ public class DriverEntity extends AbstractEntity {
     public String toString() {
         return """
                 DriverEntity{
-                    firstName='$firstName', 
-                    lastName='$lastName', 
-                    personalNumber=$personalNumber, 
-                    numberOfHoursWorked=$numberOfHoursWorked, 
-                    employmentStatus=$employmentStatus, 
-                    locationCityEntity=$locationCityEntity, 
+                    firstName='$firstName',\s
+                    lastName='$lastName',\s
+                    personalNumber=$personalNumber,\s
+                    numberOfHoursWorked=$numberOfHoursWorked,\s
+                    employmentStatus=$employmentStatus,\s
+                    locationCityEntity=$locationCityEntity,\s
                     currentTruckEntity=$currentTruckEntity
                 }""";
     }

@@ -59,7 +59,7 @@ public class DriverDto extends AbstractDto {
         return cityId;
     }
 
-    public void setCityId(Long sityId) {
+    public void setCityId(Long cityId) {
         this.cityId = cityId;
     }
 
@@ -88,12 +88,12 @@ public class DriverDto extends AbstractDto {
     public String toString() {
         return """
                 DriverDto{
-                    firstName='$firstName', 
-                    lastName='$lastName', 
-                    personalNumber=$personalNumber, 
-                    numberOfHoursWorked=$numberOfHoursWorked, 
-                    employmentStatus='$employmentStatus', 
-                    city=$city, 
+                    firstName='$firstName',\s
+                    lastName='$lastName',\s
+                    personalNumber=$personalNumber,\s
+                    numberOfHoursWorked=$numberOfHoursWorked,\s
+                    employmentStatus='$employmentStatus',\s
+                    city=$city,\s
                     track=$track
                 }""";
     }
